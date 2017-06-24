@@ -42,8 +42,8 @@ public class Keys implements IKeys {
 
     @Override
     public void SetIVKeyFromString(String IV) {
-        //This String is splited , if you want you change your splited type.
-        //The IV String like that . 255,55,2,21,33,44
+        //This String  splited the ',' if you want you can change your spliting type.
+        //In my code , the IV String like that . 255,55,2,21,33,44
         String[] StringArrayIV=IV.split(",");
         byte[] IVKey=new byte[StringArrayIV.length];
         for(int i=0;i<StringArrayIV.length;i++)
